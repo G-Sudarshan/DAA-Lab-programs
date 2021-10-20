@@ -13,7 +13,10 @@ struct node {
 
 int main(){
     int N,m;
-    cin >> N >> m;
+    cout << "Enter no. of nodes: ";
+    cin >> N;
+    cout << "Enter no. of edges: ";
+    cin >> m;
     vector<node> edges;
     for(int i = 0;i<m;i++) {
         int u, v, wt;
@@ -22,6 +25,7 @@ int main(){
     }
 
     int src;
+    cout << "Enter source node: ";
     cin >> src;
 
 
@@ -67,4 +71,14 @@ int main(){
 3 4 -2
 2 4 3
 0
+*/
+
+/* Negative Cycle
+        4 4
+        0 1 1
+        1 2 -1
+        2 3 -1
+        3 0 -1
+
+
 */
