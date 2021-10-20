@@ -62,7 +62,9 @@ int main(){
 }
 
 /*
-6 7
+
+Enter no. of nodes: 6
+Enter no. of edges: 7
 3 2 6
 5 3 1
 0 1 5
@@ -70,15 +72,27 @@ int main(){
 1 2 -2
 3 4 -2
 2 4 3
-0
+Enter source node: 0
+0 0
+1 5
+2 3
+3 3
+4 1
+5 2
+
+
 */
 
-/* Negative Cycle
-        4 4
-        0 1 1
-        1 2 -1
-        2 3 -1
-        3 0 -1
+/*
+
+Enter no. of nodes: 4
+Enter no. of edges: 4
+0 1 1
+1 2 -1
+2 3 -1
+3 0 -1
+Enter source node: 0
+Negative Cycle
 
 
 */
