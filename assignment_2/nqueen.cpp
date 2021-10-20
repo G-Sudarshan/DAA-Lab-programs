@@ -2,6 +2,11 @@
 
 N Queen Problem
 
+Name: Sudarshan Gawale
+Roll No: 33318
+Batch: L11
+Assignment: 1
+
 */
 
 #include<iostream>
@@ -35,8 +40,7 @@ bool solveNQueen(int board[N][N], int col) {
    for (int i = 0; i < N; i++) { //for each row, check placing of queen is possible or not
       if (isValid(board, i, col) ) {
          board[i][col] = 1; //if validate, place the queen at place (i, col)
-         //cout << "Step " << s++ << endl;
-         //printBoard(board);
+
          if ( solveNQueen(board, col + 1)) //Go for the other columns recursively
             return true;
          board[i][col] = 0; //When no place is vacant remove that queen
@@ -57,8 +61,17 @@ bool checkSolution() {
    return true;
 }
 int main() {
-    // int N=0;
-    // cout << "Enter the no. of columns and no. of rows: ";
-    // cin >> N;
     checkSolution();
 }
+/*
+
+OUTPUT:
+
+0 0 1 0 
+1 0 0 0 
+0 0 0 1 
+0 1 0 0 
+
+
+
+*/
