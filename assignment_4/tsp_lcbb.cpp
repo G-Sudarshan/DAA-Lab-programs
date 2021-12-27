@@ -12,7 +12,7 @@ Roll No.: 33318
 using namespace std;
 
 // number of total nodes
-#define N 5
+#define N 4
 #define INF INT_MAX
 
 class Node
@@ -148,11 +148,10 @@ int main()
 {
     int adjacensyMatrix[N][N] =
     {
-        { INF, 20, 30, 10, 11 },
-        { 15,  INF, 16,  4,  2 },
-        { 3,   5,  INF, 2,  4 },
-        { 19,   6,   18,   INF, 3 },
-        { 16,   4,   7,   16, INF }
+        { INF, 4, 12, 7 },
+        { 5, INF, INF, 18 },
+        { 11, INF,  INF, 6 },
+        { 10, 2, 3, INF }
     };
 
     cout << "\nCost is " << solve(adjacensyMatrix);
